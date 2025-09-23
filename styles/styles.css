@@ -1,5 +1,19 @@
+:root {
+    --main-color: #0a66c2;
+    --accent-color: #f3f6f8;
+    --text-color: #1d2226;
+    --secundary-color: #e7f3ff;
+    --border-color:#d1e7f7;
+    --footer-bg: #283e4a;
+    --footer-text:#fff;
+    --nav-bg:#0a66c2;
+    --nav-link: #fff;
+    --box-bg:#e7f3ff;
+    --box-border: #0a66c2;
+    --box-text: #1d2226;
+    }
 nav {
-    background-color: steelblue;
+    background-color: var(--main-color);
     padding: 10px;
 }
 nav a {
@@ -8,13 +22,13 @@ nav a {
     display: block;
 }
 h1 {
-    color: steelblue;
+    color: var(--main-color);
 }
 
 main img{
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--main-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -29,7 +43,7 @@ aside{
     margin: 1em;
     border: 1px solid rgba(0 0 0 / 0.2); /* 1 */
     padding: 1em;
-    background-color: #eee;
+    background-color: var(--box-bg);
     color: #333;
     text-align: center;
 }
@@ -39,7 +53,7 @@ aside img{
 }
 footer {
     margin-top: 1em;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--border-color);
     text-align: center;
 }
 Comment assignment.
