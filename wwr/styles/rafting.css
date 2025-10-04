@@ -43,7 +43,7 @@ section{
 }
 section figure{
     display: flex;
-    gap: 40px;
+    gap: 80px;
 }
 article{
     top: 100px;
@@ -66,6 +66,25 @@ nav, p, article {
     display: block;
     width: 100%;
     height: auto;
+}
+.textinsidebanner{
+    background-color: #e9c46a;
+    height: 120px;
+    text-align: justify;
+    margin: 200px 20px;
+}
+.history{
+    text-align: justify;
+    margin: 10px 20px;
+    justify-items: center;
+}
+.container{
+    text-align: center;
+    display: block;
+    justify-items: center;
+}
+.history img {
+    display: block;
 }
 h1 {
     position: absolute;
