@@ -43,7 +43,8 @@ section{
 }
 section figure{
     display: flex;
-    gap: 80px;
+    gap: 70px;
+    margin: 10px;
 }
 article{
     top: 100px;
@@ -74,7 +75,7 @@ nav, p, article {
     margin: 200px 20px;
 }
 .history{
-    text-align: justify;
+    text-align: center;
     margin: 10px 20px;
     justify-items: center;
 }
