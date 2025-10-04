@@ -99,6 +99,7 @@ h1 {
 }
 footer {
     display: flex;
+    align-items: center;
 }
 .hero article img {
     float: right;
