@@ -97,6 +97,7 @@ h1 {
     background-color: var(--accent1-color);
     color: #fff;
 }
+
 footer {
     display: flex;
     align-items: center;
