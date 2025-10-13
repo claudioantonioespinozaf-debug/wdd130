@@ -21,13 +21,14 @@ header{
     align-items: center;
     justify-content: space-evenly;
 }
-body {
+section body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
 header {
     display: grid;
     align-content: center;
+    column-gap: 1000px;
 }
 
 header, main, footer {
@@ -39,7 +40,7 @@ h1, h2 {
     color: var(--primary-color);
 }
 section{
-    margin: 40px;
+    margin: 4px;
 }
 section figure{
     display: flex;
@@ -48,17 +49,29 @@ section figure{
 }
 article{
     top: 100px;
-    position: absolute;
+    position: center;
+
 }
 nav, p, article {
-    margin: 16px;
-    padding: 8px;
-    display: flex;
+    padding: 5px;
+    box-sizing: 10px;
     list-style: none;
-    gap: 20px;
+    text-align: center;
+    margin: 50px;
 }
 .socialmedia a {
     text-decoration: none;
+}
+section, h2{
+    text-align: center;
+    margin: 10px;
+    padding: 10px 0 5px;
+    line-height: 20px;
+}
+section, h3 {
+    display: flex;
+    text-align: center;
+    
 }
 .hero {
     position: relative;
@@ -68,28 +81,30 @@ nav, p, article {
     width: 100%;
     height: auto;
 }
-.textinsidebanner{
-    background-color: #e9c46a;
-    height: 120px;
-    text-align: justify;
-    margin: 200px 20px;
+
+section, h4{
+    display: grid;
+    justify-items: center;
+    text-align: center;
 }
 .history{
     text-align: center;
     margin: 10px 20px;
     justify-items: center;
 }
-.container{
-    text-align: center;
-    display: block;
-    justify-items: center;
+.profile{
+    display: flex;
 }
 .history img {
     display: block;
 }
+p {
+    text-align: center;
+
+}
 h1 {
-    position: absolute;
-    top: 20px;
+    
+    top: 150px;
     width: 100%;
     padding: 16px;
     text-align: center;
@@ -102,7 +117,9 @@ footer {
     display: flex;
     align-items: center;
 }
-.hero article img {
+.socialmedia img {
     float: right;
-    width: 125px;
+    margin: 10px;
+    width: 50px;
+    justify-items: left;
 }
