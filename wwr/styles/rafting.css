@@ -159,12 +159,9 @@ legend {
 }
 
 .form-item label {
-    display: block;
+    display: flex;
     margin-bottom: 1px;
     font-weight: 10px;
-}
-h2{
-    display: flex;
 }
 
 .form-item input[type="text"],
@@ -182,7 +179,7 @@ textarea {
 }
 
 input[type="checkbox"] {
-    margin-right: 8px;
+    margin-right: 50px;
 }
 
 /* Button */
@@ -202,13 +199,12 @@ button[type="submit"]:focus {
     background-color: var(--secondary-color);
     outline: none;
 }
-
 /* Map Section */
 .map {
     margin-bottom: 30px;
 }
 
-@media (min-width: 80px) {
+@media (min-width: 200px) {
     .map {
         margin-right: 10px; /* ✅ adds horizontal space */
     }
@@ -216,7 +212,9 @@ button[type="submit"]:focus {
     form {
         margin-left: 20px; /* ✅ adds space between them */
     }
-
+div {
+    display: flex;
+}
 /* Footer */
 footer {
     display: flex;
