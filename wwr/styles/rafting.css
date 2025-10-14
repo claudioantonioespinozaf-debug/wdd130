@@ -204,6 +204,7 @@ button[type="submit"]:focus {
 }
 
 @media (min-width: 200px) {
+   }
     .map {
         margin-right: 10px; /* ✅ adds horizontal space */
     }
@@ -240,7 +241,9 @@ footer {
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
-    header, main, footer {
+    header,
+    main,
+    footer {
         width: 90%;
         margin: 0 auto;
     }
@@ -256,7 +259,13 @@ footer {
     }
 
     .map iframe {
+        width: 100%;
         height: 300px;
+    }
+
+    .contact-layout {
+        flex-direction: column;
+        align-items: center;
     }
 
     footer {
@@ -266,4 +275,5 @@ footer {
 
     .socialmedia a {
         margin: 10px;
-    } 
+    }
+}
