@@ -161,7 +161,6 @@ legend {
 .form-item label {
     display: flex;
     margin-bottom: 1px;
-    font-weight: 10px;
 }
 
 .form-item input[type="text"],
