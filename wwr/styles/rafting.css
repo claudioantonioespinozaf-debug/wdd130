@@ -1,124 +1,272 @@
 :root {
     --primary-color: #055a05;
-    --secundary-color: #f4a261;
-    --thirtiary-color: #fff;
+    --secondary-color: #f4a261; /* fixed typo from 'secundary' */
+    --tertiary-color: #fff;     /* fixed typo from 'thirtiary' */
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
-    --heading-font: "Times New Roman" "Georgia", serif;
+    --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
-header{
-    background-color: var(--thirtiary-color);
-    color: var(--accent2-color);
-}
-*{
+
+/* Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Body styles */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+
+}
+
+/* Header */
+header {
+    background-color: var(--light-color);
+    padding: 10px 20px;
+}
+
 .grid {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-}
-section body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-}
-header {
-    display: grid;
-    align-content: center;
-    column-gap: 1000px;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 20px;
 }
 
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
+/* Logo */
+header img {
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
 }
+
+/* Navigation */
+nav.navigation {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav.navigation a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav.navigation a:hover,
+nav.navigation a:focus,
+nav.navigation a.active {
+    color: var(--secondary-color);
+}
+
+nav.navigation a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+}
+
+nav.navigation a:hover::after,
+nav.navigation a:focus::after {
+    width: 100%;
+}
+
+/* Container for main and footer */
+main, footer {
+    max-width: 840px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Headings */
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-}
-section{
-    margin: 4px;
-}
-section figure{
-    display: flex;
-    gap: 70px;
-    margin: 10px;
-}
-article{
-    top: 100px;
-    position: center;
-
-}
-nav, p, article {
-    padding: 5px;
-    box-sizing: 10px;
-    list-style: none;
     text-align: center;
-    margin: 50px;
+    margin-bottom: 1rem;
 }
-.socialmedia a {
-    text-decoration: none;
-}
-section, h2{
-    text-align: center;
-    margin: 10px;
-    padding: 10px 0 5px;
-}
-section, h3 {
-    display: flex;
-    text-align: center;
-    
-}
-.hero {
-    position: relative;
-}
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-section, h4{
-    display: grid;
-    justify-items: center;
-    text-align: center;
-}
-.history{
-    text-align: center;
-    margin: 10px 20px;
-    justify-items: center;
-}
-.profile{
-    display: flex;
-}
-.history img {
-    display: block;
-}
-p {
-    text-align: center;
-
-}
-h1 {
-    
-    top: 150px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
+h1{
     background-color: var(--accent1-color);
     color: #fff;
 }
 
+h4 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 20px 0 10px;
+}
+
+/* Section styling */
+main > section:first-of-type {
+    text-align: center;
+    margin: 30px auto;
+    line-height: 1.8;
+    color: var(--accent1-color);
+  }
+
+/* Profile section */
+.profile {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile figure {
+    margin: 0;
+    text-align: center;
+}
+
+.profile img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Form styles */
+form {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+
+fieldset {
+    border: 1px solid var(--accent2-color);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 0 10px;
+}
+
+.form-item {
+    margin-bottom: 10px;
+}
+
+.form-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+h2{
+    display: flex;
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--accent1-color);
+    border-radius: 4px;
+    font-family: var(--body-font);
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Button */
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: var(--secondary-color);
+    outline: none;
+}
+
+/* Map Section */
+.map {
+    margin-bottom: 30px;
+}
+
+@media (min-width: 80px) {
+    .map {
+        margin-right: 10px; /* ✅ adds horizontal space */
+    }
+
+    form {
+        margin-left: 20px; /* ✅ adds space between them */
+    }
+
+/* Footer */
 footer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: var(--accent1-color);
+    color: var(--tertiary-color);
+    max-width: 840px;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;
+    flex-wrap: wrap;
 }
+
+.socialmedia a {
+    margin-left: 15px;
+}
+
 .socialmedia img {
-    float: right;
-    margin: 10px;
-    width: 50px;
-    justify-items: left;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
 }
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    header, main, footer {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map iframe {
+        height: 300px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .socialmedia a {
+        margin: 10px;
+    } 
