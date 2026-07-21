@@ -11,6 +11,36 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
+<head>
+    <title>Checkout</title>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+
+<body>
+    <form id="payment-form">
+        <div id="card-element">
+            <!-- Stripe inserts the secure card input here -->
+        </div>
+
+        <button type="submit">Pay $0.20</button>
+    </form>
+
+    <script>
+        const stripe = Stripe("YOUR_PUBLISHABLE_KEY");
+
+        const elements = stripe.elements();
+        const card = elements.create("card");
+        card.mount("#card-element");
+
+        document.getElementById("payment-form").addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            // You would call your backend here to create a PaymentIntent,
+            // then confirm the payment with Stripe.
+        });
+    </script>
+</body>
+
 <body>
     <header>
         <nav>
