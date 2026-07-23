@@ -96,36 +96,37 @@
                     </tbody>
                 </table>
 
-                <section class="container3">
+                <section class="contenedor3">
                     <form action="https://formspree.io/f/mqerdlkd" method="POST">
-                        <label>
-                            Your email: Obligatorio
-                            <input type="email" name="email">
+
+                        <label for="email">
+                            Your email: <strong>Obligatorio</strong>
                         </label>
-                        <label>
-                            Your message: Numero WhatsApp y Horario de Preferencia de Clase son Obligatorios.
-                            <textarea name="message"></textarea>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">
+                            Your message: <strong>Número de WhatsApp y horario de preferencia de clase son
+                                obligatorios.</strong>
                         </label>
+                        <textarea id="message" name="message" required></textarea>
+
                         <button type="submit">Send</button>
+
                     </form>
-                    <style>
-                        .boton-pago {
-                            display: inline-flexbox;
-                            background: #009ee3;
-                            color: white;
-                            padding: 14px 28px;
-                            border-radius: 8px;
-                            text-decoration: none;
-                            font-family: Arial;
-                        }
-                    </style>
+
+                    <p class="payment-text">
+                        Las clases deben estar pagadas antes de comenzar. Si hay alguna duda,
+                        por favor háblanos por WhatsApp.
+                    </p>
+
                     <div class="contenedor">
-                        <div style="display: inline-flexbox; align-items: flex-end; gap: 40px;"></div>
                         <a href="https://mpago.la/1RmvnbN" class="boton-pago" target="_blank">
-                            Pagar Clase Ahora $17.990
+                            Pagar Clase Ahora — $17.990
                         </a>
                     </div>
                 </section>
+
+
             </section>
             <a href="https://wa.me/56984748360?text=Hola,%20quiero%20agendar%20una%20clase." class="boton-whatsapp"
                 target="_blank">

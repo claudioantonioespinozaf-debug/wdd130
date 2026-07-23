@@ -84,7 +84,7 @@ nav.navigation a:focus::after {
 
 /* Container for main and footer */
 main, footer {
-    max-width: 840px;
+    max-width: 5000px;
     margin: 20px auto;
     padding: 0 20px;
 }
@@ -385,22 +385,51 @@ footer {
   background-color: #f4f4f4;
 }
 
-.grid-item {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
 
-.grid-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .form  {
 
@@ -723,45 +752,185 @@ thead {
 
 
 
-.container2 {
+
+
+
+
+
+
+
+
+/* ===== Contact & Payment Section ===== */
+
+.contenedor2 {
+    max-width: 650px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e5e5;
+
     display: flex;
     flex-direction: column;
-    align-items: center;   /* Centra horizontalmente */
-    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Form */
+
+.contenedor2 form {
     width: 100%;
-    margin: 40px auto;
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
 }
 
-.container2 form {
-    width: 450px;
-}
+/* Labels */
 
-.container2 label {
-    display: block;
-    margin-bottom: 15px;
-}
-
-.container2 input,
-.container2 textarea {
+.contenedor2 label {
     width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+    color: #264653;
 }
+
+/* Inputs */
+
+.contenedor2 input,
+.contenedor2 textarea {
+    width: 100%;
+    padding: 14px 16px;
+
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+
+    background: #fafafa;
+    font-size: 16px;
+
+    transition: all 0.25s ease;
+}
+
+.contenedor2 input:focus,
+.contenedor2 textarea:focus {
+    outline: none;
+    border-color: #009ee3;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(0, 158, 227, 0.15);
+}
+
+.contenedor2 textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Send Button */
+
+button[type="submit"] {
+    margin-top: 10px;
+    padding: 14px 40px;
+
+    background: #055a05;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all .25s ease;
+}
+
+button[type="submit"]:hover {
+    background: #077807;
+    transform: translateY(-2px);
+}
+
+/* Payment Text */
+
+.payment-text {
+    max-width: 500px;
+    margin: 30px auto 20px;
+    text-align: center;
+    line-height: 1.7;
+    color: #555;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 25px;
+}
+
+/* Payment Button */
 
 .contenedor {
-    margin-top: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .boton-pago {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 280px;
+    padding: 15px 32px;
+
     background: #009ee3;
     color: white;
-    padding: 14px 28px;
-    border-radius: 8px;
+
     text-decoration: none;
-    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    box-shadow: 0 6px 18px rgba(0, 158, 227, .25);
+
+    transition: all .25s ease;
 }
+
+.boton-pago:hover {
+    background: #007dc5;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0, 125, 197, .35);
+}
+
+.boton-pago:active {
+    transform: translateY(0);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .contenedor2 {
+        margin: 30px 20px;
+        padding: 25px;
+    }
+
+    .contenedor2 form {
+        width: 100%;
+    }
+
+    .boton-pago {
+        width: 100%;
+        min-width: 0;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
+
+
+
+
 
 
 
@@ -826,45 +995,6 @@ thead {
 
 
 
-.container3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;   /* Centra horizontalmente */
-    justify-content: center;
-    width: 100%;
-    margin: 40px auto;
-}
-
-.container3 form {
-    width: 450px;
-}
-
-.container3 label {
-    display: block;
-    margin-bottom: 15px;
-}
-
-.container3 input,
-.container3 textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.contenedor {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.boton-pago {
-    display: inline-block;
-    background: #009ee3;
-    color: white;
-    padding: 14px 28px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-}
 
 
 
@@ -887,169 +1017,606 @@ thead {
 
 
 
-.container3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;   /* Centra horizontalmente */
-    justify-content: center;
-    width: 100%;
-    margin: 40px auto;
-}
+/* ===== Contact & Payment Section ===== */
 
-.container3 form {
-    width: 450px;
-}
-
-.container3 label {
-    display: block;
-    margin-bottom: 15px;
-}
-
-.container3 input,
-.container3 textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.contenedor {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.boton {
-    background-color: #009ee3;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.boton:hover {
-    background-color: #0077b6;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Contenedor principal */
-.contenedor1 {
-    width: 210%;
-    max-width: 1800px;
-    margin: 100px auto;
-    padding: 60px;
-
-    border: 2px solid #ddd;
-    border-radius: 12px;
-    background: #fff;
+.contenedor3 {
+    max-width: 650px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e5e5;
 
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    align-items: center;
 
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Formulario */
-form {
-    width: 200%;
+/* Form */
+
+.contenedor3 form {
+    width: 100%;
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
 }
 
-label {
-    display: block;
-    margin-bottom: 20px;
-    font-weight: bold; 
-    left: 200px;   /* Move right */
+/* Labels */
 
-
-
-
+.contenedor3 label {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    color: #264653;
 }
 
-input,
-textarea {
-    width: 150%;
-    padding: 12px;
-    margin-top: 8px;
-    border: 1px solid #bbb;
-    border-radius: 6px;
-    box-sizing: border-box;
+/* Inputs */
+
+.contenedor3 input,
+.contenedor3 textarea {
+    width: 100%;
+    padding: 14px 16px;
+
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+
+    background: #fafafa;
     font-size: 16px;
+
+    transition: all 0.25s ease;
 }
 
-textarea {
-    min-height: 120px;
+.contenedor3 input:focus,
+.contenedor3 textarea:focus {
+    outline: none;
+    border-color: #009ee3;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(0, 158, 227, 0.15);
 }
 
-/* Botón Enviar */
-button {
-    width: 300%;
-    padding: 14px;
-    background: #046320;
+.contenedor3 textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Send Button */
+
+button[type="submit"] {
+    margin-top: 10px;
+    padding: 14px 40px;
+
+    background: #055a05;
     color: white;
+
     border: none;
-    border-radius: 6px;
-    cursor: pointer;
+    border-radius: 8px;
+
     font-size: 16px;
-    transition: .3s;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all .25s ease;
 }
 
-button:hover {
-    background: #18aa7e;
+button[type="submit"]:hover {
+    background: #077807;
+    transform: translateY(-2px);
 }
 
-/* Contenedor del botón de pago */
+/* Payment Text */
+
+.payment-text {
+    max-width: 500px;
+    margin: 30px auto 20px;
+    text-align: center;
+    line-height: 1.7;
+    color: #555;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 25px;
+}
+
+/* Payment Button */
+
 .contenedor {
     display: flex;
-    justify-content: baseline;
-    margin-top: 10px;
+    justify-content: center;
+    width: 100%;
 }
 
-/* Botón de pago */
 .boton-pago {
     display: inline-flex;
     justify-content: center;
     align-items: center;
 
+    min-width: 280px;
+    padding: 15px 32px;
+
     background: #009ee3;
     color: white;
 
-    padding: 15px 35px;
-
-    border-radius: 8px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
 
-    transition: .3s;
+    border-radius: 8px;
+
+    box-shadow: 0 6px 18px rgba(0, 158, 227, .25);
+
+    transition: all .25s ease;
 }
 
 .boton-pago:hover {
     background: #007dc5;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0, 125, 197, .35);
+}
+
+.boton-pago:active {
+    transform: translateY(0);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .contenedor3 {
+        margin: 30px 20px;
+        padding: 25px;
+    }
+
+    .contenedor3 form {
+        width: 100%;
+    }
+
+    .boton-pago {
+        width: 100%;
+        min-width: 0;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================
+   CONTACT & PAYMENT SECTION
+================================= */
+
+.contenedor1 {
+
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 60px auto;
+    padding: 50px 30px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,0.10);
+
+    border: 1px solid #e5e5e5;
+
+
+    display: grid;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+
+.contenedor1 form {
+
+    width: 100%;
+    max-width: 600px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+
+/* Labels */
+
+.contenedor1 label {
+
+    width: 100%;
+
+    color: #264653;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    text-align: center;
+
+}
+
+
+.contenedor1 strong {
+
+    color: #055a05;
+
+}
+
+
+
+/* Inputs */
+
+.contenedor1 input,
+.contenedor1 textarea {
+
+    width: 100%;
+
+    padding: 15px 18px;
+
+
+    border-radius: 10px;
+
+    border: 1px solid #ccd6d9;
+
+
+    background: #fafafa;
+
+
+    font-size: 16px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+
+    transition:
+        border-color .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+
+}
+
+
+.contenedor1 input:focus,
+.contenedor1 textarea:focus {
+
+    outline: none;
+
+    background: #ffffff;
+
+    border-color: #009ee3;
+
+
+    box-shadow:
+        0 0 0 4px rgba(0,158,227,0.15);
+
+}
+
+
+
+.contenedor1 textarea {
+
+    min-height: 160px;
+
+    resize: vertical;
+
+}
+
+
+
+/* =========================
+   SEND BUTTON
+========================= */
+
+
+button[type="submit"] {
+
+    margin-top: 10px;
+
+    padding: 14px 45px;
+
+
+    background: #055a05;
+
+    color: white;
+
+
+    border: none;
+
+    border-radius: 50px;
+
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+
+    cursor: pointer;
+
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        box-shadow .3s ease;
+
+}
+
+
+button[type="submit"]:hover {
+
+    background: #077807;
+
+    transform: translateY(-3px);
+
+
+    box-shadow:
+        0 8px 20px rgba(5,90,5,.25);
+
+}
+
+
+
+/* =========================
+   PAYMENT MESSAGE
+========================= */
+
+
+.payment-text {
+
+    max-width: 600px;
+
+
+    margin: 35px auto 25px;
+
+
+    padding-top: 25px;
+
+
+    border-top:
+        1px solid #e5e5e5;
+
+
+    color: #555;
+
+
+    line-height: 1.7;
+
+    font-size: 15px;
+
+    text-align: center;
+
+}
+
+
+
+/* =========================
+   PAYMENT BUTTON
+========================= */
+
+
+.contenedor {
+
+    width: 100%;
+
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+
+.boton-pago {
+
+    display: inline-flex;
+
+
+    justify-content: center;
+
+    align-items: center;
+
+
+    min-width: 300px;
+
+
+    padding: 16px 35px;
+
+
+    background:
+        linear-gradient(135deg,#00b4d8,#0077b6);
+
+
+    color: white;
+
+
+    text-decoration: none;
+
+
+    border-radius: 50px;
+
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+
+    box-shadow:
+        0 8px 20px rgba(0,119,182,.35);
+
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+
+
+    animation: paymentPulse 2.5s infinite;
+
+}
+
+
+
+.boton-pago:hover {
+
+    background:
+        linear-gradient(135deg,#0096c7,#023e8a);
+
+
+    transform:
+        translateY(-5px)
+        scale(1.05);
+
+
+    box-shadow:
+        0 15px 30px rgba(2,62,138,.45);
+
+}
+
+
+
+.boton-pago:active {
+
+    transform: scale(.98);
+
+}
+
+
+
+/* Payment Button Animation */
+
+@keyframes paymentPulse {
+
+
+    0% {
+
+        box-shadow:
+        0 0 0 0 rgba(0,180,216,.45);
+
+    }
+
+
+    70% {
+
+        box-shadow:
+        0 0 0 18px rgba(0,180,216,0);
+
+    }
+
+
+    100% {
+
+        box-shadow:
+        0 0 0 0 rgba(0,180,216,0);
+
+    }
+
+}
+
+
+
+/* =========================
+   MOBILE DESIGN
+========================= */
+
+
+@media(max-width:768px){
+
+
+    .contenedor1 {
+
+        margin: 30px 15px;
+
+        padding: 30px 20px;
+
+    }
+
+
+    .contenedor1 form {
+
+        max-width: 100%;
+
+    }
+
+
+    .boton-pago {
+
+        width: 100%;
+
+        min-width: 0;
+
+        font-size: 16px;
+
+    }
+
+
+    button[type="submit"] {
+
+        width: 100%;
+
+    }
+
+}
 
 
 
@@ -1147,12 +1714,12 @@ textarea:focus {
    SUBMIT BUTTON
 ========================= */
 
-button[type="submit"] {
+button[type="submit"] {    
     width: 100%;
     max-width: 250px;
 
     display: block;
-    margin: 20px auto 0;
+    margin: 5px auto 0;
 
     padding: 14px 25px;
 
@@ -1193,4 +1760,161 @@ button[type="submit"]:active {
 .map iframe {
     width: 100%;
     height: 900px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================
+   ADVENTURE SERVICES SECTION
+================================= */
+
+.company-service {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 60px auto;
+    padding: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+
+/* Individual Service Card */
+
+.grid-item {
+
+    background-color: var(--tertiary-color);
+
+    border-radius: 16px;
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.12);
+
+    text-align: center;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Card Hover Effect */
+
+.grid-item:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,0.18);
+}
+
+
+/* Images */
+
+.grid-item img {
+
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border: none;
+    border-radius: 0;
+
+    transition:
+        transform 0.4s ease;
+}
+
+
+.grid-item:hover img {
+
+    transform: scale(1.08);
+
+}
+
+
+/* Text */
+
+.grid-item p {
+
+    margin: 0;
+
+    padding: 25px;
+
+    color: var(--accent1-color);
+
+    font-family: var(--body-font);
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+    flex-grow: 1;
+
+}
+
+
+/* Responsive Tablet */
+
+@media (max-width: 1000px) {
+
+    .company-service {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* Responsive Mobile */
+
+@media (max-width: 600px) {
+
+    .company-service {
+
+        grid-template-columns: 1fr;
+
+        padding: 20px;
+
+    }
+
+
+    .grid-item img {
+
+        height: 220px;
+
+    }
+
 }
