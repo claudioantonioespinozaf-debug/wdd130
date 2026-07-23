@@ -498,7 +498,7 @@ legend {
 
 .hero image-title {
     position: absolute;
-    top: 50%;
+    top: 150%;
     right: 100%;
     transform: translate(-50%, -50%);
     color: var(--tertiary-color); /* white */
