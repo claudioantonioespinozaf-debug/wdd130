@@ -401,6 +401,11 @@ footer {
   margin-bottom: 10px;
   margin-right: 10px;
 }
+
+.form  {
+
+  display: grid;
+}
 fieldset {
   border: 2px solid #009688; /* Teal border */
   border-radius: 8px;
@@ -598,22 +603,22 @@ legend {
 
 .grid-item {
   display: flex;
-  border: 2px solid #ccc;
-  padding: 10px;
+  border: 10px solid #ccc;
+  padding: 20px;
   background-color: #f9f9f9;
-  width: 300px; /* adjust width as needed */
+  width: 350px; /* adjust width as needed */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .grid-item img {
-  width: 150px;
+  width: 75px;
   height: auto;
-  margin-right: 15px;
-  border-radius: 5px;
+  margin-right: 30px;
+  border-radius: 140px;
 }
 
 .grid-item p {
-  margin: 0;
+  margin: 25;
   align-self: center;
   font-family: Arial, sans-serif;
 }
@@ -653,4 +658,70 @@ thead {
 
 .button:hover {
   background-color: #00796b;  /* Darker teal on hover */
+}
+
+
+
+
+
+
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.boton-pago {
+    background-color: #0070ba;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: solid;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.boton-pago:hover {
+    background-color: #005ea6;
+}
+
+
+
+
+
+
+
+
+
+.caja {
+    width: 800px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    gap: 20px;           /* Espacio entre los elementos */
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.precio {
+    font-size: 20px;
+    color: #444;
+}
+
+.boton {
+    background: #28a745;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
 }
