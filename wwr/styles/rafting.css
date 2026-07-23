@@ -666,25 +666,6 @@ thead {
 
 
 
-.contenedor {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.boton-pago {
-    background-color: #0070ba;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: solid;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.boton-pago:hover {
-    background-color: #005ea6;
-}
-
 
 
 
@@ -724,4 +705,492 @@ thead {
     padding: 10px 25px;
     text-decoration: none;
     border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* Centra horizontalmente */
+    justify-content: center;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.container2 form {
+    width: 450px;
+}
+
+.container2 label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.container2 input,
+.container2 textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.boton-pago {
+    display: inline-block;
+    background: #009ee3;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.boton-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* Centra horizontalmente */
+    justify-content: center;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.container3 form {
+    width: 450px;
+}
+
+.container3 label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.container3 input,
+.container3 textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.boton-pago {
+    display: inline-block;
+    background: #009ee3;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* Centra horizontalmente */
+    justify-content: center;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.container3 form {
+    width: 450px;
+}
+
+.container3 label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.container3 input,
+.container3 textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.boton {
+    background-color: #009ee3;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #0077b6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contenedor principal */
+.contenedor1 {
+    width: 210%;
+    max-width: 1800px;
+    margin: 100px auto;
+    padding: 60px;
+
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Formulario */
+form {
+    width: 200%;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold; 
+    left: 200px;   /* Move right */
+
+
+
+
+}
+
+input,
+textarea {
+    width: 150%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+/* Botón Enviar */
+button {
+    width: 300%;
+    padding: 14px;
+    background: #046320;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+}
+
+button:hover {
+    background: #18aa7e;
+}
+
+/* Contenedor del botón de pago */
+.contenedor {
+    display: flex;
+    justify-content: baseline;
+    margin-top: 10px;
+}
+
+/* Botón de pago */
+.boton-pago {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #009ee3;
+    color: white;
+
+    padding: 15px 35px;
+
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.boton-pago:hover {
+    background: #007dc5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   CHECKBOX SECTION
+========================= */
+
+fieldset div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+/* Equal size checkboxes */
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0077b6;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+}
+
+/* Checked checkbox */
+input[type="checkbox"]:checked {
+    background-color: #0077b6;
+    border-color: #0077b6;
+}
+
+/* Check symbol */
+input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    left: 3px;
+    top: -2px;
+}
+
+/* Checkbox text */
+fieldset div label {
+    margin: 0;
+    font-weight: normal;
+    color: #333;
+    cursor: pointer;
+}
+
+
+/* =========================
+   MESSAGE BOX
+========================= */
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px;
+
+    border: 2px solid #0077b6;
+    border-radius: 8px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    resize: none;
+    box-sizing: border-box;
+
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #023e8a;
+    background-color: #f0f8ff;
+}
+
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+button[type="submit"] {
+    width: 100%;
+    max-width: 250px;
+
+    display: block;
+    margin: 20px auto 0;
+
+    padding: 14px 25px;
+
+    background-color: #0077b6;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+
+button[type="submit"]:hover {
+    background-color: #023e8a;
+    transform: scale(1.03);
+}
+
+
+button[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+/* Make the map slightly wider */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr; /* Map gets more space */
+    gap: 40px;
+    align-items: start;
+}
+
+.map iframe {
+    width: 100%;
+    height: 900px;
 }
