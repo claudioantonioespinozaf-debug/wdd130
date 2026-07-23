@@ -540,6 +540,7 @@ legend {
 }
 .hero h1{
     left: 50%;
+    top: 75%;
 }
 .trips {
   position: relative;
