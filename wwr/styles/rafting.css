@@ -1926,3 +1926,8 @@ button[type="submit"]:active {
     }
 
 }
+
+html,
+body {
+    overflow-x: hidden;
+}
