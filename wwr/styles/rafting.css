@@ -89,6 +89,10 @@ main, footer {
     padding: 0 20px;
 }
 
+.title {
+    text-align: center;
+}
+
 /* Headings */
 h1, h2, {
     font-family: var(--heading-font);
